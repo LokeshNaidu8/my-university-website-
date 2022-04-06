@@ -1,8 +1,8 @@
-html>
+<html>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>University Website Design</title>
-<link rel="stylesheet" href="static/style.css">
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,600,700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> 
 </head>
@@ -40,7 +40,7 @@ html>
                     </td>
                     <td>{{i[1]}}</td>
                     <td>
-                        <a href="/deletelink/{{i[0]}}" id="link" style="color: rgb(14, 13, 13); font-weight: 500;">Delete</a>
+                        <a href="/deleteuser/{{i[0]}}" id="link" style="color: rgb(224, 98, 98); font-weight: 500;">Delete</a>
                     </td>
                 </tr>
                 {% endfor %}
